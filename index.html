@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini CSS Framework</title>
+  <link rel="stylesheet" href="/dist/css/main.css">
+</head>
+<body>
+  <header class="container navbar">
+    <img src="assets/images/web.google.developers.jpg" alt="brand" class="is-hidden-mobile">
+    <nav>
+      <a href="#">Register</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+  <section class="container has-small-vm">
+    <h1 class="is-center">Helloo</h1>
+    <div class="columns">
+      <div class="column is-half">
+        <h1>Yow Berhasil bro</h1>
+      </div>
+      <div class="column">
+        <h1>Selamat Datang!</h1>
+      </div>
+      <div class="column">
+        <h1>Selamat Datang!</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="container has-small-vm">
+    <h1>Cards</h1>
+    <h2>Vertical Cards</h2>
+    <div class="columns">
+      <div class="column cards">
+        <img src="assets/images/web.google.developers.jpg" alt="card image">
+        <div class="card-title">Judul Satu</div>
+        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tempora numquam optio? Minima omnis quos, ut reiciendis et ipsam modi?</p>
+      </div>
+      <div class="column cards">
+        <img src="assets/images/web.google.developers.jpg" alt="card image">
+        <div class="card-title">Judul Satu</div>
+        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tempora numquam optio? Minima omnis quos, ut reiciendis et ipsam modi?</p>
+      </div>
+      <div class="column cards">
+        <img src="assets/images/web.google.developers.jpg" alt="card image">
+        <div class="card-title">Judul Satu</div>
+        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tempora numquam optio? Minima omnis quos, ut reiciendis et ipsam modi?</p>
+      </div>
+    </div>
+
+    <h2>Horizontal Cards</h2>
+    <div class="columns">
+      <div class="column cards is-horizontal">
+        <img src="assets/images/web.google.developers.jpg" alt="card image" class="is-avatar">
+        <div class="content">
+          <div class="card-title">Judul Satu</div>
+          <p class="card-description"><a href="#" class="is-link">Lorem ipsum dolor</a> sit amet consectetur adipisicing elit. Voluptates tempora numquam optio? Minima omnis quos, ut reiciendis et ipsam modi?</p>
+          <button class="button is-info is-float-right">Edit</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container has-small-vm">
+    <button class="button">Normal</button>
+    <button class="button is-large">Large</button>
+    <button class="button is-small">Small</button>
+    
+    <button class="button is-warning">Warning</button>
+    <button class="button is-danger">Danger</button>
+    <button class="button is-success">Success</button>
+    <button class="button is-info">Info</button>
+  </section>
+
+  <section class="container has-small-vm">
+    <div class="field">
+      <label for="">Nama</label>
+      <input type="text" name="" placeholder="tulis disini...">
+    </div>
+    
+    <div class="field">
+      <label for="">Subject</label>
+      <textarea name="" id="" cols="30" rows="10" placeholder="subject disini"></textarea>
+    </div>
+
+    <button class="button is-success is-full-width">Submit</button>
+  </section>
+</body>
+</html>

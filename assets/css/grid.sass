@@ -1,0 +1,200 @@
+$container-size: 960px
+$default-padding: 2%
+$default-margin: 1%
+$main-grey: rgb(84, 84, 84)
+$danger-color: rgb(236, 78, 73)
+$warning-color: rgb(244, 236, 56)
+$success-color: rgb(62, 226, 156)
+$info-color: rgb(6, 116, 177)
+
+*
+  box-sizing: border-box
+  transition: all 0.5s ease
+
+body
+  font-size: 20px
+  color: $main-grey
+
+.container
+  max-width: $container-size
+  margin: 0 auto
+
+.navbar
+  display: flex
+  justify-content: space-between
+  align-items: center
+  img
+    height: 80px
+    width: 160px
+
+nav
+  a
+    text-decoration: none
+    background: $main-grey
+    color: white
+    display: inline-block
+    padding: 4px
+    &:hover
+      background: black
+
+.columns
+  display: flex
+
+.column
+  display: block
+  flex-basis: 0
+  flex-grow: 1
+  flex-shrink: 1
+  padding: $default-padding
+  margin: $default-margin
+  &:first-child
+    margin-left: 0
+  &:last-child
+    margin-right: 0
+  &.is-half
+    width: 50%
+    flex: none
+  &.is-one-third
+    width: 33.3333%
+    flex: none
+  &.is-two-third
+    width: 66.6666%
+    flex: none
+  &.is-one-fifth
+    width: 20%
+    flex: none
+
+.cards
+  background: white
+  box-shadow: 0px 2px 5px rgb(187, 184, 184)
+  border-radius: 5px
+  img
+    max-width: 100%
+    margin-bottom: 10px
+  .card-title
+    font-weight: bold
+    font-size: 1.4rem
+    margin-bottom: 8px
+  .card-description
+    text-align: justify
+  &.is-horizontal
+    display: flex
+    .content
+      margin-left: 10px
+
+.button
+  font-size: 1.2rem
+  border: 1px solid $main-grey
+  background: white
+  padding: 10px
+  &:hover
+    cursor: pointer
+    color: white
+    background: $main-grey
+  &.is-warning
+    border-color: $warning-color
+    &:hover
+      background: $warning-color
+      color: white
+  &.is-danger
+    border-color: $danger-color
+    &:hover
+      background: $danger-color
+      color: white
+  &.is-success
+    border-color: $success-color
+    &:hover
+      background: $success-color
+      color: white
+  &.is-info
+    border-color: $info-color
+    &:hover
+      background: $info-color
+      color: white
+
+.field
+  margin-bottom: 10px
+  label
+    display: block
+    margin-bottom: 5px
+    font-weight: bold
+  input, textarea
+    width: 100%
+    border-radius: 5px
+    border: 1px solid $main-grey
+    padding: 1%
+    font-size: 1.2rem
+
+.is-bold
+  font-weight: bold
+
+.is-link
+  text-decoration: underline
+  color: $main-grey
+  &:hover
+    color: black
+
+.clear-fix
+  clear: both
+
+.is-float-left
+  float: left
+
+.is-float-right
+  float: right
+
+.is-hidden-desktop
+  display: none
+
+.is-hidden-mobile
+  display: block
+
+@media screen and ( max-width: 760px )
+  body
+    font-size: 16px
+    width: 90%
+    margin: 0 auto
+
+  .columns
+    display: block
+
+  .is-hidden-desktop
+    display: block
+
+  .is-hidden-mobile
+    display: none
+
+.is-center
+  text-align: center
+.is-warning
+  color: $warning-color
+
+.is-danger
+  color: $danger-color
+
+.is-success
+  color: $success-color
+
+.is-info
+  color: $info-color
+
+.is-avatar
+  width: 100px
+  height: 100px
+  border-radius: 50%
+
+.has-small-vm
+  margin-top: 20px
+  margin-bottom: 20px
+
+.is-large
+  font-size: 1rem
+
+.is-small
+  font-size: 0.8rem
+
+.is-full-width
+  width: 100%
+// temporary
+// .column
+//   background: green
